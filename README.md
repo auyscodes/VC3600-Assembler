@@ -2,15 +2,21 @@
 
 
 Project contains an assembler and emulator for VC3600 decimal computer.
+
 /*--------------------------------------------------------------------------------------------------------------------*/
+
 Handout for VC3600 Assembly language:
 
-Statement Format: 
+Statement Format:
+
 An assembly language statement consists of from one to three fields.  These are:
 
 Label - used to reference the statement.  It is optional.
+
 Operation Code - a symbolic name for the number machine language op code.
+
 Operand - Used to supply additional information.  For a machine language instruction this a label.
+
 Labels start in column 1, all other fields separated by blanks or tabs.
 
 Symbolic Operation Codes:
@@ -24,15 +30,19 @@ Addresses:
 An address my be specified by a label.
 
 Assembler Language Instructions:
+
 DC - define constant. The constant is a decimal integer placed in the operand field.
+
 DS - define storage. The operand specifies the number of words of storage to be set aside.
-ORG -define origin. The operand specifies the address at which the translation of the next instruction will be generated,
+
+ORG -define origin. The operand specifies the address at which the translation of the next instruction will be generated
+
 END – indicates that there are no additional statements to translate.
 
 Comments: 
 Data after a ";" is a comment. Comments may appear anywhere within an instruction or by themselves. Blank lines are ignored.
 
-Case Sensitivity
+Case Sensitivity:
 All symbols will be case sensitive.  Operation codes may be written in upper or lower case or some combination of the two.
 
 Example: 
